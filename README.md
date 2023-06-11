@@ -1,1 +1,0 @@
-# skilla-test
