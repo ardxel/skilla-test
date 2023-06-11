@@ -1,23 +1,21 @@
 import {createSlice, PayloadAction} from "@reduxjs/toolkit";
 import {getProfile} from "../api";
 import type {TProfile} from "./mock-profile-info.ts";
-
-
-const test_img = 'https://img.freepik.com/free-photo/handsome-confident-smiling-man-with-hands-crossed-on-chest_176420-18743.jpg?w=2000';
+import {TEST_IMAGE} from "../../../shared/config";
 
 const workers = [
   {
-    img: test_img,
+    img: TEST_IMAGE,
     name: "Мирон",
     surname: "Батонов"
   },
   {
-    img: test_img,
+    img: TEST_IMAGE,
     name: 'Милана',
     surname: 'Константинопольская'
   },
   {
-    img: test_img,
+    img: TEST_IMAGE,
     name: 'Алексей',
     surname: 'Ильин'
   }
