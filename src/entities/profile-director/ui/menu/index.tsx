@@ -1,6 +1,3 @@
-import styled from "@emotion/styled";
-import {IconButton, Menu, MenuItem} from "@mui/material";
-
 import CallOutlinedIcon from "@mui/icons-material/CallOutlined";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import LogoutIcon from '@mui/icons-material/Logout';
@@ -9,99 +6,16 @@ import {FC} from "react";
 import {useSelector} from "react-redux";
 import {ProfileDirectorWorkerList} from "../list";
 import {AppTooltip} from "shared/ui";
-
-const Container = styled(Menu)`
-  && {
-    & .MuiMenu-root.MuiPopover-paper.MuiMenu-paper {
-      box-Shadow: 4px 16px 50px rgba(129, 135, 163, 0.24);
-    }
-
-    & .MuiList-root .MuiMenu-list {
-      border: 1px solid #EAF0FA;
-    }
-    & .MuiButtonBase-root.MuiMenuItem-root {
-      padding: 0;
-    }
-  }
-`
-
-const Item = styled(MenuItem)`
-  display: flex;
-  flex-direction: column;
-  cursor: auto;
-  width: 368px;
-
-  &:hover {
-    background: transparent;
-
-  }
-`
-
-const LogoutButton = styled(IconButton)`
-  position: absolute;
-  right: 0;
-  top: 0;
-
-  && {
-    padding: 0;
-  }
-
-  &:hover {
-    svg {
-      color: ${(props: App.Theme) => props.theme.color.blue500};
-      cursor: pointer;
-    }
-  }
-
-  svg {
-    color: #ADBDFD;
-  }
-`
-
-const MenuTitle = styled('span')`
-  && {
-    //width: 100%;
-    width: calc(100% - 48px);
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    margin: 12px 20px;
-  }
-`
-
-const MenuTitleName = styled('span')`
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 22px;
-  color: #122945;
-  font-family: "SF Pro Display", sans-serif;
-`
-
-const MenuTitleDesc = styled('span')`
-  text-transform: capitalize;
-  font-weight: 400;
-  font-size: 15px;
-  color: #5E7793;
-`
-
-const MenuTitleInfo = styled('div')`
-  margin-top: 8px;
-`
-
-const MenuTitleInfoItem = styled('div')`
-  display: flex;
-  align-items: center;
-
-  & * {
-    color: #5E7793;
-    font-size: 15px;
-    font-weight: 400;
-  }
-
-  & > span {
-    margin-left: 12px;
-  }
-`
+import {
+  Container,
+  Item,
+  LogoutButton,
+  MenuTitle,
+  MenuTitleDesc,
+  MenuTitleInfo,
+  MenuTitleInfoItem,
+  MenuTitleName
+} from "./styles.tsx";
 
 export type Worker = {
   img: string;

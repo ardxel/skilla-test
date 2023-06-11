@@ -4,7 +4,8 @@ import styled from '@emotion/styled';
 import {Popper} from "@mui/material";
 import AddCircleSharpIcon from '@mui/icons-material/AddCircleSharp';
 import {changeBalance} from "entities/profile-director/model";
-import {IncrementButton, Count, Container, BalanceMenuInput, Rubble} from './styles.tsx';
+import {BalanceMenuInput, Container, Count, IncrementButton, Rubble} from './styles.tsx';
+
 const Error = styled('span')`
   font-size: 14px;
   font-weight: 400;

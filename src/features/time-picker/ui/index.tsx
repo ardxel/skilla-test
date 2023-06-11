@@ -2,7 +2,7 @@ import {useCallback, useMemo} from "react";
 import {Dropdown, SelectItem} from "shared/ui";
 import {DateRange, DateRangeValidationError,} from "@mui/x-date-pickers-pro";
 import {useDispatch, useSelector} from "react-redux";
-import {selectTimeline} from "entities/calls";
+import {selectTimeline} from "entities/call-table";
 import {FieldChangeHandlerContext} from "@mui/x-date-pickers/internals";
 import {dateDiffInDays} from "../lib/dateDiffInDays.ts";
 import KeyboardArrowLeftOutlinedIcon from "@mui/icons-material/KeyboardArrowLeftOutlined";

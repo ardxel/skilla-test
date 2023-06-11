@@ -113,7 +113,7 @@ export const callsModel = createSlice({
     builder.addCase(getCallList.fulfilled, (state, action: PayloadAction<Call[]>) => {
       state.isLoading = false;
       state.idle = false;
-      // state.calls = action.payload;
+      // state.call-table = action.payload;
 
       // add fake_call_result key for testing app
       state.calls = action.payload.map((call) => {

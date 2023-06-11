@@ -1,7 +1,7 @@
 import {useCallback} from "react";
 import {useDispatch, useSelector} from "react-redux";
 
-import {FilterKey, setFilterValue} from "entities/calls";
+import {FilterKey, setFilterValue} from "entities/call-table";
 
 type FilterValue = string;
 type FilterHandler = (selected: FilterValue) => void;

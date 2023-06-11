@@ -2,7 +2,7 @@ import {useMemo} from "react";
 import {useDispatch, useSelector} from "react-redux";
 
 import {Dropdown, SelectItem} from "shared/ui";
-import {selectOrganization} from "entities/calls";
+import {selectOrganization} from "entities/call-table";
 import {ProfileDirector} from "entities/profile-director";
 
 import {AnalyticsInfo, config, Search} from "features";
@@ -19,7 +19,7 @@ const Header = () => {
     dispatch(selectOrganization(selected));
   }
 
-  // new calls and all calls
+  // new call-table and all call-table
   const newCallsInfo = useMemo(() => {
     if (calls.length > 0) {
       const newCalls = calls.filter((call) => !!call.results.length).length;

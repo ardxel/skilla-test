@@ -1,9 +1,9 @@
 import {useDispatch, useSelector} from "react-redux";
 import {ChangeEvent} from "react";
 import styled from '@emotion/styled';
-import {CallList} from "entities/calls/ui";
+import {CallList} from "entities/call-table/ui";
 import {Filters, Search, TimePicker, UserBalance} from "features";
-import {formatPhoneNumber, searchByPhoneNumber} from "entities/calls";
+import {formatPhoneNumber, searchByPhoneNumber} from "entities/call-table";
 
 const CallsPageContainer = styled.main`
   position: absolute;

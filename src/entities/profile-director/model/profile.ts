@@ -1,7 +1,7 @@
 import {createSlice, PayloadAction} from "@reduxjs/toolkit";
 import {getProfile} from "../api";
 import type {TProfile} from "./mock-profile-info.ts";
-import {TEST_IMAGE} from "../../../shared/config";
+import {TEST_IMAGE} from "shared/config";
 
 const workers = [
   {

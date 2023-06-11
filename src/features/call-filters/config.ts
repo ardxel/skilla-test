@@ -1,4 +1,4 @@
-import {Filter} from "entities/calls/model";
+import {Filter} from "entities/call-table/model";
 
 export const config = {
 

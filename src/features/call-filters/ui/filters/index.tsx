@@ -4,7 +4,7 @@ import {Avatar, Dropdown, Grade, SelectItem} from "shared/ui";
 
 import {config} from "../../config.ts";
 
-import {clearFilters, Filter} from "entities/calls/model";
+import {clearFilters, Filter} from "entities/call-table/model";
 import {useDispatch, useSelector} from "react-redux";
 import {useCallFilter} from "../../model.ts";
 import {TEST_IMAGE} from "shared/config";

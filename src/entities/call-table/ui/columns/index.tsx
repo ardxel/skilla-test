@@ -128,7 +128,7 @@ export function getColumns(hoveredRow: number): GridColDef[] {
         const id = getRowIdFromParams(params);
         const time = params.row.time;
         const url = "https://www.bensound.com/bensound-music/bensound-dubstep.mp3";
-        if (id === hoveredRow && params.row.show_record && time > 0) {
+        if (id === hoveredRow && params.row.fake_call_result && time > 0) {
           return (
             <div style={ {width: '100%', position: 'relative'} }>
               <ReactPlayer
